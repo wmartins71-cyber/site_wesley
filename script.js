@@ -1,4 +1,8 @@
 const introRain = document.querySelector('.intro-rain');
+const copyrightYear = document.querySelector('#copyright-year');
+
+if (copyrightYear) copyrightYear.textContent = new Date().getFullYear();
+
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const compactViewport = window.matchMedia('(max-width: 520px)').matches;
 const introRevealDelay = compactViewport ? 2000 : 3600;
