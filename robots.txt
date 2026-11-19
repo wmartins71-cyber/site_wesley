@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.wesdsg.des.br/sitemap.xml
