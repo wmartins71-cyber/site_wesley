@@ -17,8 +17,8 @@ footer{padding-right:max(32px,calc((100vw - var(--max))/2))!important;padding-le
 @media(max-width:560px){
   html{scroll-padding-top:116px}
   .header{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:60px 45px;height:105px;padding:0 20px;backdrop-filter:blur(18px)}
-  .header nav{grid-column:1/-1;display:flex;align-self:stretch;justify-content:space-between;gap:0;margin:0 -20px;padding:0 20px;overflow:hidden;border-top:1px solid #20382d}
-  .header nav a{display:flex;align-items:center;min-height:44px;padding:0;white-space:nowrap;font-size:12px}
+  .header nav{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-self:stretch;gap:0;margin:0 -20px;padding:0 20px;border-top:1px solid #20382d}
+  .header nav a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:44px;padding:0;white-space:nowrap;font-size:12px}
   .status{font-size:11px;white-space:nowrap}
   .status i{width:7px;height:7px}
   .hero{min-height:calc(100dvh - 105px);gap:30px;padding-top:38px;padding-bottom:27px}
@@ -74,4 +74,4 @@ footer{padding-right:max(32px,calc((100vw - var(--max))/2))!important;padding-le
   .footer-bottom{display:grid;grid-template-columns:1fr;gap:4px;margin-top:22px;padding-top:18px;font-size:11px}
 }
 
-@media(max-width:560px){html,body{max-width:100%;overflow-x:clip}.hero,.section,footer,.case-metric,.case-title,.case-grid,.intro-content,.skills-head,.trajectory-head{min-width:0}.portrait,.case-story,.flow,.skill-grid article,.facts>div{min-width:0}}
+@media(max-width:560px){.hero,.section,footer,.case-metric,.case-title,.case-grid,.intro-content,.skills-head,.trajectory-head{min-width:0}.portrait,.case-story,.flow,.skill-grid article,.facts>div{min-width:0}.hero-text,.intro-text,.skills-head p,.trajectory-head p,.case-title>p,.case-story p,.flow>p,.timeline p,.contact p,.facts small,.skill-grid p{overflow-wrap:anywhere;hyphens:auto}}
