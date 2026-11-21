@@ -17,10 +17,8 @@ footer{padding-right:max(32px,calc((100vw - var(--max))/2))!important;padding-le
 @media(max-width:560px){
   html{scroll-padding-top:116px}
   .header{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:60px 45px;height:105px;padding:0 20px;backdrop-filter:blur(18px)}
-  .header nav{grid-column:1/-1;display:flex;align-self:stretch;gap:0;margin:0 -20px;padding:0 20px;overflow-x:auto;overscroll-behavior-x:contain;border-top:1px solid #20382d;scrollbar-width:none}
-  .header nav::-webkit-scrollbar{display:none}
-  .header nav a{display:flex;align-items:center;min-height:44px;padding:0 14px;white-space:nowrap;font-size:13px}
-  .header nav a:first-child{padding-left:0}
+  .header nav{grid-column:1/-1;display:flex;align-self:stretch;justify-content:space-between;gap:0;margin:0 -20px;padding:0 20px;overflow:hidden;border-top:1px solid #20382d}
+  .header nav a{display:flex;align-items:center;min-height:44px;padding:0;white-space:nowrap;font-size:12px}
   .status{font-size:11px;white-space:nowrap}
   .status i{width:7px;height:7px}
   .hero{min-height:calc(100dvh - 105px);gap:30px;padding-top:38px;padding-bottom:27px}
@@ -75,3 +73,5 @@ footer{padding-right:max(32px,calc((100vw - var(--max))/2))!important;padding-le
   .contact .contact-main{font-size:clamp(1.25rem,6vw,1.65rem);overflow-wrap:anywhere}
   .footer-bottom{display:grid;grid-template-columns:1fr;gap:4px;margin-top:22px;padding-top:18px;font-size:11px}
 }
+
+@media(max-width:560px){html,body{max-width:100%;overflow-x:clip}.hero,.section,footer,.case-metric,.case-title,.case-grid,.intro-content,.skills-head,.trajectory-head{min-width:0}.portrait,.case-story,.flow,.skill-grid article,.facts>div{min-width:0}}
